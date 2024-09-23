@@ -32,6 +32,8 @@
     font-size: 30px;
     color: #4dbf00;
   }
+
+  
   
   .menu-container {
     flex: 6;
@@ -78,13 +80,13 @@
 }
 
 
-  .profile-container {
+  /* .profile-container {
     flex: 2;
     display: flex;
     align-items: center;
     justify-content: right;
     margin-right: -20px; 
-}
+} */
   
 .profile-text-container {
     margin: 0 0 0 20px; 
@@ -247,12 +249,52 @@
     transition: 1s all ease-in-out;
   }
 
-.arrow{
-    font-size: 110px;
-    position: absolute;
-    top:90px;
-    right:0;
-    color: lightgray;
-    opacity: .7;
-    cursor: pointer;
+.arrow {
+  font-size: 110px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.profile-container {
+  float: right; /* Move the profile container to the right */
+  margin-right: 20px; /* Add some spacing from the right edge */
+  position: relative; /* Ensure the dropdown menu is positioned relative to this container */
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dropdown-menu {
+  display: none; /* Initially hide the dropdown menu */
+  position: absolute;
+  right: 0; /* Align to the right of the profile container */
+  background-color: rgba(51, 51, 51, 0.9); /* Add transparency */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px; /* Add border radius */
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #575757;
+}
+
+.profile-container:hover .dropdown-menu {
+  display: block; /* Show the dropdown menu on hover */
 }
