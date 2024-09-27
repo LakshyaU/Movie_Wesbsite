@@ -232,21 +232,32 @@
     transition: 1s all ease-in-out;
   }
   
+
   .movie-list-item-button {
-    padding: 10px;
-    background-color: #4dbf00;
-    color: white;
-    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #4dbf00; 
+    color: black; 
+    border-radius: 10px; 
     outline: none;
     border: none;
     cursor: pointer;
-    position: absolute;
+    position: absolute; 
     bottom: 1px;
     left: 30px;
-    opacity: 0;
+    font-weight: bold; 
+    display: flex; 
+    align-items: center;
+    opacity: 0; 
     transition: 1s all ease-in-out;
   }
+  
+  .movie-list-item-button:hover {
+    background-color: #3a9000;
+  }
 
+  .movie-list-item-button i {
+    margin-right: 8px;
+  }
 .arrow{
     font-size: 110px;
     position: absolute;
